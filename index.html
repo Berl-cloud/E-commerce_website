@@ -48,11 +48,10 @@
 
             <div class="pictures">
                 <ul>
-                    <li><img src="images/bagpak.jpeg" alt=""></li>
-                    <li><img src="images/bagpak1.jpeg" alt=""></li>
-                    <li><img src="images/bagpak2.jpeg" alt=""></li>
-                    <li><img src="images/bagpak4.jpeg" alt=""></li>
-                    <li><img src="images/bagpak4.jpeg" alt=""></li>
+                    <li><img id="greyBag" src="images/bagpak.jpeg" alt="" onclick="clickme(this)"></li>
+                    <li><img src="images/bagpak1.jpeg" alt="" onclick="clickme(this)"></li>
+                    <li><img src="images/bagpak2.jpeg" alt="" onclick="clickme(this)"></li>
+                    <li><img id="wineBag" src="images/bagpak4.jpeg" alt="" onclick="clickme(this)"></li>
                 </ul>
             </div>
 
@@ -61,23 +60,71 @@
             </div>
 
             <div class="details">
-                
-                <div>
-                    <img id="chosenImg" src="images/bagpak.jpeg" alt="">
-                    <p>Couple laptop backpack <br> USB charging 3-piece</p>
+
+                <div class="details-header">
+                    <div class="details-subheader">
+                        <h3>Item added to cart</h3>
+                        <p>1 Item</p>
+                    </div>
                 </div>
 
-                <div class="productDetails">
-                    <p>Ghc 200</p>
+                <div class="details-body">
+                    <img id="chosenImg" src="images/bagpak.jpeg" alt="">
+                    <p>
+                        Couple laptop backpack <br> USB charging 3-piece
+                        Ghc 200
+                    </p>
+                </div>
+                <hr>
+
+                <div class="color">
+                    Select Colour:
+                    <button id="grey" onclick="color()">Grey</button>
+                    <button id="wine" onclick="color1()">Wine Red</button>
+                    <button disabled>Black</button>
+                </div>
+
+                <p> Select Size:
+                    <select name="size" id="size">
+                        <option value="">small</option>
+                        <option value="">medium</option>
+                        <option value="">large</option>
+                    </select>
+                </p>
+
+                <div class="qty">
+                    <h4>Quantity:<input type="number" id="qtyNumber" min="1" max="100"></h4>
+                    <!-- <span><p id="reduce" onclick="minus()">-</p> -->
+                    <!-- <p id="increase" onclick="plus()">+</p>
+                </span> -->
+                </div>
+                <div class="add-to-bag">
+                    <input id="addCart" type="button" value="ADD TO BAG">
+                    <input id="more" type="button" value="Check out on our new release!">
+                </div>
+
+                <div class="description">
+
+                </div>
+
+
+            </div>
+
+            <div class="cart-confirmation">
+                
+                <div class="cart-confirmation-header">
+                    <h2>Item added to cart</h2>
+                    
 
                 </div>
             </div>
-
         </div>
-       
 
     </div>
-    <script src="js/script.js"></script>
+
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

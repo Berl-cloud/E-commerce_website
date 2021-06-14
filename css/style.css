@@ -106,6 +106,7 @@ body{
     margin-right: 3rem;
     width: 90%;
 }
+
 .preview img:hover{
     transition: transform 0.4s ease-out;
 	transform: scale(1.3);
@@ -122,39 +123,37 @@ body{
 .details img{
     width: 70%;
 }
+ .details-header{
+    /* background-color: orangered; */
+    border: 2px solid orangered;
+}
 
-.details div{
+.details-subheader{
+    border: 2px solid white;
+    padding: 0.5rem 1rem 1rem;
+    background-color: orangered;
+    color: white;
+}
+
+.details-header h3{
+    padding: 0;
+    margin: 0;
+}
+
+.details-header p{
+    padding: 0;
+    margin: 0;
+}
+
+.details-body{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
 }
 
-.details a{
-    text-decoration: none;
-    color: black;
-    margin-left: 10%;
+.details-body p{
+    margin-top: 0%;
 }
-
-.details p a{
-    color: orangered;
-}
-
-.details i{
-    width: 5%;
-}
-
-.details p{
-    font-size: 85%;
-}
-
-.checked {
-    color: orangered;
-  }
-
-  .details input{
-      border-radius: 5px;
-      border: none;
-      
-  }
 
   #grey:hover{
       background-color: rgb(199, 199, 199);
@@ -167,24 +166,25 @@ body{
       cursor: pointer;
   }
 
-  .qty{
+  /* .qty{
       display: grid;
-      grid-template-columns: 1fr 4fr;
+      grid-template-columns: 1fr 3fr;
       margin-top: 5%;
       height: 10%;
-  }
+  } */
 
   .qty input{
-      height: 50%;
+      height: 30%;
+      margin-bottom: 0;
   }
 
-  #reduce{
+  /* #reduce{
     border: 1px solid #ccc;
     width: 10%;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
-  }
+  } */
 
   #qtyNumber{
     border: 2px solid #ccc;
@@ -194,13 +194,13 @@ body{
     cursor: pointer;
   }
 
-  #increase{
+  /* #increase{
     border: 1px solid #ccc;
     width: 10%;
     border-radius: 70%;
     text-align: center;
     cursor: pointer;
-  }
+  } */
 
   .add-to-bag input{
       width: 100%;
@@ -211,11 +211,8 @@ body{
       margin-bottom: 2%;
       margin-top: 5%;
       cursor: pointer;
+      border: none;
   }
-
-  /* .add-to-cart{
-
-  } */
 
 .add-to-bag .more{
       background-color: white;
@@ -224,14 +221,14 @@ body{
 }
 
 .cart-confirmation{
-    position: relative;
+    position: absolute;
     top: 0rem;
     left: 61rem;
     width: 27%;
     background-color: white;
     border: 1px solid #ccc;
     height: fit-content;
-    display: none;
+    right: -100%;
 }
 
 .cart-confirmation hr{

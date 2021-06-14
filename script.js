@@ -16,22 +16,22 @@ function clickme(smallImg) {
 
 /************************************CHANGING ITEM COLOR************************************/
 
-function colour() {
+function color() {
     let grey = document.getElementById('greyBag');
     let fullImg = document.getElementById("preview_imgbox");
     let imgSelected = document.getElementsByClassName('chosenImg');
             fullImg.src = grey.src;
-            imgSelected.src = grey.src
+            // imgSelected.src = grey.src
             localStorage.setItem('chosenColor', JSON.stringify('Grey'));
             // document.getElementById('cart-confirmation-product-info .product_color').innerText = Grey;
   };
 
-function color() {
+function color1() {
     let wine = document.getElementById('wineBag');
     let fullImg = document.getElementById("preview_imgbox");
     let imgSelected = document.getElementsByClassName('chosenImg');
             fullImg.src = wine.src;
-            imgSelected.src = fullImg.src;
+            // imgSelected.src = fullImg.src;
             localStorage.setItem('chosenColor',JSON.stringify ('Wine Red'));
             // document.getElementById('cart-confirmation-product-info .product_color').textContent = Wine-red;
   };
@@ -63,7 +63,7 @@ function color() {
 
   /************************************ITEM QUANTITY TO SHOW IN CART************************************/
 
-  let carts = document.querySelectorAll('.add-to-cart');
+let carts = document.querySelectorAll('#addCart');
 
 let products = [
     {
@@ -99,7 +99,7 @@ function cartNumbers (product) {
    if (productNumbers) {
     localStorage.setItem('cartNumbers', productNumbers + 1 );
     document.querySelector('.cart span').textContent = productNumbers + 1;
-    document.querySelector('.cart-confirmation').style.display = 'block';
+    document.querySelector('.cart-confirmation').classList.add('slide') = ;
     // document.querySelector('product-qtysubtotal span').innerHTML = productNumbers + 1;
    } else{
     localStorage.setItem('cartNumbers', 1);
