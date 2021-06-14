@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bag</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="checkoutPage">
+
+        <div class="navbar">
+            <div class="navlogo">
+                <img src="images/logo.png">
+            </div>
+            <div class="navmenu">
+                <ul>
+                    <li><a href="index.html"><i class="zmdi zmdi-home"></i>Home</a> </li>
+                    <li><a href="">Find a store</a> </li>
+                    <li><a href="">About Us</a> </li>
+                    <li><a href="">Contact us</a> </li>
+                    <li><a href=""><i class="zmdi zmdi-account"></i> Login | Register</a></li>
+                    <li class="cart"><a href="">
+                            <i class="zmdi zmdi-shopping-cart"></i> (<span>0</span>)
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="stores">
+            <ul>
+                <li><a href="#bakpak">BACKPACKS</a></li>
+                <li><a href="#suits">SUITS & BLAIZERS</a></li>
+                <li><a href="#wc">WOMEN CLOTHING</a></li>
+                <li><a href="#fw">FOOTWEAR</a></li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="checkout-confirmation">
+
+            <div class="checkout-confirmation-info">
+
+                <div class="checkout-confirmation-info-header">
+                    <h5 class="item">ITEM</h5>
+                    <h5 class="quantity">QUANTITY</h5>
+                    <h5 class="unitprice">UNIT PRICE</h5>
+                    <h5 class="totalprice">TOTAL PRICE</h5>
+                </div>
+
+                <div class="cartProducts">
+                    <h5><img src="images/bagpak.jpeg" class="chosenImg" alt=""><span>Couple Laptop backpack</span></h5> 
+                    <input type="number" name="" id="productQty" min="1" max="100">
+                    <h5 class="productPrice">Ghc 200</h5>
+                    <h5 class="productTotal">  <span> <button id="deleteCartItem">Remove</button></span></h5> 
+                </div>
+                <div class="updateProduct">
+                    <button id="updateProductQty" onclick="totalCost()">Update</button>
+                </div>
+            </div>
+
+            <div class="order-summary">
+
+                <div class="order-summary-header">
+                    <div class="order-summary-subheader">
+                        <h3>Order Summary</h3>
+                        1 Item
+                    </div>
+                </div>
+
+                <div class="order-summary-body">
+                    <p>Subtotal <span id="subtotal">Ghc 0 </span></p> 
+                    <p>Sales Tax <span id="tax">Ghc 0 </span></p> 
+                    <p>TOTAL <span id="esttotal">Ghc 0 </span></p> 
+                    <div class="promocode">
+                        <input type="text" placeholder="Enter promo code">
+                        <button>Apply</button>
+                    </div>
+                    <div class="checkout-btn">
+                        <button id="btn">CHECKOUT</button>
+                    </div>
+                    <p>Or pay with:</p>
+
+                    <div class="paypal-btn">
+                        <button><img src="images/paypal.png"></button>
+                    </div>
+
+                    <div class="amazonpay-btn">
+                        <button><img src="images/amazonpay.png" alt=""></button>
+                    </div>
+                </div>
+
+                <p>HEADS UP! ORDERS CAN'T BE CANCELLED OR CHANGED ONCE IN PROCESS.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
