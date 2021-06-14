@@ -11,7 +11,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
+<!-- <script>
+    let cart = localStorage.getItem('cartNumbers');
+    console.log(cart)
+    document.querySelector('.cart span').innerHTML = cart
+</script> -->
 <body>
 
     <div class="checkoutPage">
@@ -28,7 +32,7 @@
                     <li><a href="">Contact us</a> </li>
                     <li><a href=""><i class="zmdi zmdi-account"></i> Login | Register</a></li>
                     <li class="cart"><a href="">
-                            <i class="zmdi zmdi-shopping-cart"></i> (<span>0</span>)
+                            <i class="zmdi zmdi-shopping-cart"></i> (<span class="cart-min">0</span>)
                         </a></li>
                 </ul>
             </div>
@@ -71,12 +75,11 @@
                 <div class="order-summary-header">
                     <div class="order-summary-subheader">
                         <h3>Order Summary</h3>
-                        1 Item
                     </div>
                 </div>
 
                 <div class="order-summary-body">
-                    <p>Subtotal <span id="subtotal">Ghc 0 </span></p> 
+                    <p>Subtotal <span id="subtotal" class=".cart-confirmation-subtotal_p">Ghc 0 </span></p> 
                     <p>Sales Tax <span id="tax">Ghc 0 </span></p> 
                     <p>TOTAL <span id="esttotal">Ghc 0 </span></p> 
                     <div class="promocode">
@@ -93,7 +96,7 @@
                     </div>
 
                     <div class="amazonpay-btn">
-                        <button><img src="images/amazonpay.png" alt=""></button>
+                        <button><img src="images/amazon.png" alt=""></button>
                     </div>
                 </div>
 
@@ -103,7 +106,7 @@
         </div>
 
     </div>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

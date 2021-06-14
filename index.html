@@ -60,20 +60,19 @@
             </div>
 
             <div class="details">
-
-                <div class="details-header">
-                    <div class="details-subheader">
-                        <h3>Item added to cart</h3>
-                        <p>1 Item</p>
-                    </div>
-                </div>
-
-                <div class="details-body">
-                    <img id="chosenImg" src="images/bagpak.jpeg" alt="">
-                    <p>
+                <div class="details-info">
+                    <h2>
                         Couple laptop backpack <br> USB charging 3-piece
-                        Ghc 200
-                    </p>
+                    </h2>
+                    <i class="zmdi zmdi-star"></i> <span><i class="zmdi zmdi-star"></i></span>
+                    <i class="zmdi zmdi-star"></i>
+                    <i class="zmdi zmdi-star"></i>
+                    <i id="notRated" class="zmdi zmdi-star"></i>
+                    <a href="">Write a review</a>
+
+                    <h4>50% discount on all orders over Ghc 1000</h4>
+                    <h3>Ghc 200</h3>
+
                 </div>
                 <hr>
 
@@ -93,31 +92,56 @@
                 </p>
 
                 <div class="qty">
-                    <h4>Quantity:<input type="number" id="qtyNumber" min="1" max="100"></h4>
+                    <h4>Quantity:<input type="number" id="qtyNumber" value="0" min="1" max="100"></h4>
                     <!-- <span><p id="reduce" onclick="minus()">-</p> -->
                     <!-- <p id="increase" onclick="plus()">+</p>
                 </span> -->
                 </div>
                 <div class="add-to-bag">
-                    <input id="addCart" type="button" value="ADD TO BAG">
+                    <input id="btn_addCart" type="button" value="ADD TO BAG">
                     <input id="more" type="button" value="Check out on our new release!">
                 </div>
 
-                <div class="description">
-
-                </div>
-
-
             </div>
 
-            <div class="cart-confirmation">
-                
+            <div class="cart-confirmation" id="cart-confirmation" >
+
                 <div class="cart-confirmation-header">
-                    <h2>Item added to cart</h2>
-                    
+                    <h2>Items added to cart</h2>
+                    <p id="cart-confirmationClosebtn">X</p>
+                </div>
+
+                <div class="cart-confirmation-product">
+                    <div class="cart-confirmation-product-img">
+                        <img src="images/bagpak.jpeg" alt="">
+                    </div>
+                    <div class="cart-confirmation-product-info">
+                        <h5>
+                            Couple laptop backpack <br> USB charging 3-piece
+                        </h5>
+                        <p>Ghc 200</p>
+                        <p >Qty: <span class="cart-span">0</span></p>
+                    </div>
 
                 </div>
+
+                <div class="cart-confirmation-subtotal">
+                    <h4>CART TOTAL:</h4>
+                    <P></P>
+                </div>
+
+                <div class="cart-confirmation-shipnotice">
+                    <div class="cart-confirmation-shipnotice-progress"></div>
+                    <p>You qualify for FREE SHIPPING!</p>
+                </div>
+
+                <div class="cart-confirmation-btn">
+                    <a href="cart.html"><input type="button" value="CHECKOUT" onclick="CartNumbers()"></a>
+                    <a href="index.html"><input class="more" type="button" value="CONTINUE SHOPPING"></a>
+                </div>
+
             </div>
+
         </div>
 
     </div>
