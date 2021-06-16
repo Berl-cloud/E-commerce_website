@@ -475,7 +475,12 @@ body{
     border: none;
     font-size: medium;
     color: white;
-    background-color: orangered
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.promocode button:active{
+   background-color: rgb(253, 73, 8,0.5)
 }
 
 .checkout-btn{
